@@ -1,2 +1,18 @@
-1. Modify settings.py
-2. Modify roshanapp/zkconf.py
+1. Modify settings.py:
+    - Database configs
+    - MEDIA_ROOT is the absolute path of roshan/static
+2. Modify roshanapp/zkconf.py:
+    - control_machines is tuple of ips
+    - servers is zookeeper cluster
+3. Modify apache httpd.conf such as:
+     WSGIScriptAlias /roshan /home/eddix/roshan/roshan.wsgi
+     <Directory /home/chenxin/djcode/roshan>
+         Order deny,allow
+         Allow from all
+     </Directory>
+4. Modify statis/scripts/roshan-main.js
+     url_prefix is the prefix string for ajax request.
+     if your roshan is: http://zookeeper.myhost.com/roshan/, this should be configed as "/roshan/".
+
+Default account:
+    admin:admin
