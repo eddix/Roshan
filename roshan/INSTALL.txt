@@ -1,0 +1,2 @@
+1. Modify settings.py
+2. Modify roshanapp/zkconf.py

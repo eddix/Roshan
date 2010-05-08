@@ -1,0 +1,123 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body {
+    font:normal 12px verdana;
+    margin:0;
+    padding:0;
+    border:0 none;
+    overflow:hidden;
+    height:100%;
+}
+p {
+    margin:5px;
+}
+.settings {
+    background-image:url(ext/images/folder_wrench.png);
+}
+.nav {
+    background-image:url(ext/images/folder_go.png);
+}
+#header {
+    background: #7F99BE url(images/hd_bg.jpg) repeat-x center;
+	line-height: 45px;
+	color: #fff;
+	font-size: 16px;
+	font-family:Arial, sans-serif;
+	text-indent: 7px;
+}
+#user_perms {
+	height: 45px;
+	line-height: 45px;
+	padding-right: 20px;
+	float: right;
+	overflow: hidden;
+	color: #ffffff;
+	font-size: 12px;
+}
+.bold {
+	font-weight: bold;
+}
+.pre {
+	font-family: 'monaco', 'consolas', monospace;
+}
+#user_perms a:link, #user_perms a:visited {
+	color: #e0f0f0;
+	text-decoration: none;
+}
+#user_perms a:hover {
+	color: #e0f0f0;
+	text-decoration: underline;
+}
+.leader a span{
+	font-weight:bolder;
+	color: #C22219;
+}
+.failed a span{
+	color:#666;
+	text-decoration:line-through;
+}
+.nodepath {
+	font-size: 14px;
+}
+.tab {
+	background: #fff url(images/tab_bg.jpg) no-repeat;
+}
+.s_tab {
+	background: url(images/s.jpg) no-repeat;
+}
+
+.n_tab {
+	background: url(images/n.jpg) no-repeat;	
+}
+.stvers {
+	font-family:monospace;
+	color: #0b2369;
+}
+.prompt {
+	font-family:sand-serif;
+	color:#0b2369;
+	font-weight:bolder;
+}
+.pt {
+	font-family:monospace;
+	color:#0b2369;
+}
+.welcome-page {
+	background:#DFE8F6;
+	padding:3px;
+}
+.welcome-page h2 {
+	font-size: 16px;
+	color: #0b2369;
+}
+.welcome-page h3 {
+	font-size: 14px;
+	color: #0b2369;
+}
+.welcome-page h4 {
+	font-size: 12px;
+	color: #0b2369;
+}
+.welcome-page p {
+	text-indent: 24px;
+}
+.welcome-page .leader{
+	font-weight:bolder;
+	color: #C22219;
+}
+.welcome-page .failed{
+	color:#666;
+	text-decoration:line-through;
+}
+.add-icon{
+	background-image:url(ext/images/add.gif) !important;
+}
+.edit-icon {
+	background-image:url(ext/images/cog_edit.png) !important;
+}
+.delete-icon {
+	background-image:url(ext/images/delete.gif) !important;
+}
