@@ -1,0 +1,33 @@
+1、安装sqlite3：
+./configure --prefix=~/opt
+make && make install
+2、安装python2.6：
+./configure --prefix=~/opt
+make && make install
+（Python2.6和sqlite3必须安在同一目录，完了之后修改相应的环境变量）
+3、安装apache:
+./configure --prefix=~/apache
+make && make install
+4、安装mod_wsgi:
+./configure --prefix=~/apache
+5、安装Django：
+python setup.py install
+
+1.修改settings.py:
+    - Database configs
+    - MEDIA_ROOT配置为roshan/static的绝对路径。
+2. 修改roshanapp/zkconf.py:
+    - control_machines is tuple of ips，为每个zk节点的默认管理权限。
+    - servers is zookeeper cluster
+3. Modify apache httpd.conf such as:
+     WSGIScriptAlias /roshan /home/eddix/roshan/roshan.wsgi
+     <Directory /home/chenxin/djcode/roshan>
+         Order deny,allow
+         Allow from all
+     </Directory>
+4. Modify statis/scripts/roshan-main.js
+     url_prefix is the prefix string for ajax request.
+     if your roshan is: http://zookeeper.myhost.com/roshan/, this should be configed as "/roshan/".
+
+Default account:
+    admin:admin
