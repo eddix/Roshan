@@ -1,3 +1,5 @@
 INTRO
 
-Roshan is a web-base administrative interface for ZooKeeper cluster.
+Roshan is a web-based administrative interface for ZooKeeper cluster.
+
+Roshan is developed with Django and Ext-js.
